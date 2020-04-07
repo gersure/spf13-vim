@@ -1,5 +1,5 @@
 " Modeline and Notes {
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=9 foldmethod=marker spell:
 "
 "                    __ _ _____              _
 "         ___ _ __  / _/ |___ /      __   __(_)_ __ ___
@@ -102,6 +102,7 @@
     " General {
         if count(g:spf13_bundle_groups, 'general')
             Bundle 'scrooloose/nerdtree'
+            Bundle 'Xuyuanp/nerdtree-git-plugin'
             Bundle 'altercation/vim-colors-solarized'
             Bundle 'spf13/vim-colors'
             Bundle 'tpope/vim-surround'
@@ -124,7 +125,7 @@
             Bundle 'powerline/fonts'
             Bundle 'bling/vim-bufferline'
             Bundle 'easymotion/vim-easymotion'
-            Bundle 'jistr/vim-nerdtree-tabs'
+            "Bundle 'jistr/vim-nerdtree-tabs'
             Bundle 'flazz/vim-colorschemes'
             Bundle 'mbbill/undotree'
             Bundle 'nathanaelkane/vim-indent-guides'
@@ -202,7 +203,8 @@
     " Python {
         if count(g:spf13_bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            Bundle 'klen/python-mode'
+            "Bundle 'klen/python-mode'
+            Bundle 'python-mode/python-mode'
             Bundle 'yssource/python.vim'
             Bundle 'python_match.vim'
             Bundle 'pythoncomplete'
@@ -244,7 +246,8 @@
 
     " HTML {
         if count(g:spf13_bundle_groups, 'html')
-             Bundle 'vim-scripts/HTML-AutoCloseTag'
+            "Bundle 'heracek/HTML-AutoCloseTag'
+            Bundle 'vim-scripts/HTML-AutoCloseTag'
             Bundle 'hail2u/vim-css3-syntax'
             Bundle 'gorodinskiy/vim-coloresque'
             Bundle 'tpope/vim-haml'
